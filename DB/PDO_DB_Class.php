@@ -1,35 +1,6 @@
 <?php
 
-/*
-
-$db->select($columns,$table,$where,$others='',$data,$format,$fetchALL,$debug=0)
-
-$db->update($table,$columns,$where,$others='',$data,$format,$debug=0)
-
-$db->insert($table,$columns,$values,$data,$format,$debug=0)
-
-$db->delete($table,$where,$others='',$data,$format,$debug=0)
-
-$db->select_num_rows($table,$where,$others='',$data,$format)
-
-$columns = '*';
-
-$table = 'member';
-
-$where = 'cs_id = ?';
-
-$data = array(4);
-
-$format = array($i);
-
-$fetchALL = 1;
-
-*/
-
-$DB_HOST = "122.116.159.53";
-$DB_NAME = "ctm_rankbar";
-$DB_USER = "rankbar";
-$DB_PASS = "rankbar@#18";
+include_once '../config/config.php';
 
 $s = PDO::PARAM_STR;
 $i = PDO::PARAM_INT;
